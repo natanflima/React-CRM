@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomerItem from './customerItem';
+import CustomerItem from './CustomerItem';
 
 const CustomerList = ({ customers }) => {
   return (

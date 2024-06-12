@@ -1,22 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './pages/homePage';
-import CustomersPage from './pages/customersPage';
-import NotFoundPage from './pages/notFoundPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import CustomersPage from './pages/CustomersPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/customers" component={CustomersPage} />
-          <Route component={NotFoundPage} />
-        </Switch>
-      </div>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>} exact />
+        <Route path="/customers" element={<CustomersPage/>} exact />
+
+          
+      </Routes>
+    </BrowserRouter>
   );
 };
 

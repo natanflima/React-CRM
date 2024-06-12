@@ -1,0 +1,11 @@
+.Customers {
+    background-color: #954cf3;
+    height: 50px;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

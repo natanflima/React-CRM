@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import CustomerList from '../components/customerList';
-import CustomerForm from '../components/customerForm';
+import CustomerList from '../components/CustomerList';
+import CustomerForm from '../components/CustomerForm';
 import { getCustomers } from '../services/customerService';
+import './Customers.css'
 
 const CustomersPage = () => {
   const [customers, setCustomers] = useState([]);
@@ -12,9 +13,9 @@ const CustomersPage = () => {
     setCustomers(data);
   };
 
-  useEffect(() => {
-    fetchCustomers();
-  }, []);
+  // useEffect(() => {
+  //   fetchCustomers();
+  // }, []);
 
   const handleSave = () => {
     fetchCustomers();
@@ -31,8 +32,8 @@ const CustomersPage = () => {
 
   return (
     <div className="container">
-      <h2>Customers</h2>
-      <CustomerForm customerToEdit={customerToEdit} onSave={handleSave} />
+      <h2 className='Customers'>Customers</h2>
+      <CustomerForm CustomerToEdit={customerToEdit} onSave={handleSave} />
       <CustomerList customers={customers} onEdit={handleEdit} onDelete={handleDelete} />
     </div>
   );

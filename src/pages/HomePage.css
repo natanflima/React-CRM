@@ -1,0 +1,16 @@
+/* estilos locais, especificos */
+.container-fluid {
+    color: white;
+    margin: 250px;
+}
+
+.right-image {
+    display: block;
+    margin-left: 1000px;
+    width: 30%;
+
+}
+/* .body {
+    background-color: black;
+    height: 100%;
+} */
