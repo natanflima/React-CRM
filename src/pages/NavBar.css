@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #954cf3 !important; 
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.btn-outline-success{
+    background-color: black !important;
+}
+
+.btn{
+    color:white !important;
+    border-color:white !important; 
+}

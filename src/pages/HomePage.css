@@ -1,16 +1,22 @@
 /* estilos locais, especificos */
+
+ol {
+    list-style-type: none;
+}
+
 .container-fluid {
     color: white;
-    margin: 250px;
+    margin-top: 300px;
 }
 
 .right-image {
     display: block;
-    margin-left: 1000px;
     width: 30%;
-
+    margin-top: -150px;
+    margin-left: 1000px;
 }
-/* .body {
-    background-color: black;
-    height: 100%;
-} */
+
+h1, p, img, a.btn{
+    margin-left: 80px;
+    margin-top: 30px;
+}
