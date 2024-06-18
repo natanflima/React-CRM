@@ -12,7 +12,7 @@ html,body,#root {
   border: 1px solid #954cf3;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: #7135bd;
   border: 1px solid #7135bd;
 }
@@ -22,7 +22,7 @@ html,body,#root {
   color: white;
 }
 
-.form-control:focus{
+.form-control:focus {
   background-color: black;
   border: 1px solid black;
   color: white;

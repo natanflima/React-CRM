@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CustomerList from '../components/CustomerList';
 import CustomerForm from '../components/CustomerForm';
 import { getCustomers } from '../services/customerService';
-import './Customers.css'
+import './CustomersPage.css'
 
 const CustomersPage = () => {
   const [customers, setCustomers] = useState([]);

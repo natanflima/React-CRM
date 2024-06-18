@@ -1,3 +1,33 @@
-.text {
-    color: white;
+.text-about {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.text-about h1 {
+  color: #954cf3;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.text-about {
+  line-height: 1.6;
+}
+
+.text-about h2 {
+  margin-top: 40px;
+  color: #954cf3;
+  margin-bottom: 50px;
+}
+
+.text-about ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.text-about li {
+  margin-bottom: 10px;
 }
