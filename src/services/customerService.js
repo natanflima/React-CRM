@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/customers';
+const API_URL = 'http://localhost:3333/api/customers';
 
 export const getCustomers = async () => {
   const response = await fetch(API_URL);
@@ -9,10 +9,11 @@ export const getCustomers = async () => {
 export const createCustomer = async (customer) => {
   const response = await fetch(API_URL, {
     method: 'POST',
+    body: JSON.stringify(customer),
     headers: {
+      "Access-Control-Allow-Origin": '*',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(customer),
   });
   const data = await response.json();
   return data;

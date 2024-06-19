@@ -5,14 +5,11 @@ import CustomersPage from './pages/CustomersPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
-import Menu from './pages/Menu';
-import Search from './pages/Search';
-import NavBar from './pages/NavBar';
+import Menu from './pages/Menu/Menu';
 import RegisterClient from './pages/RegisterClient';
 import RegisterCollab from './pages/RegisterCollab';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UpdateCollab from './pages/UpdateCollab';
 
 const App = () => {
   return (
@@ -26,8 +23,6 @@ const App = () => {
         <Route path="/Menu" element={<Menu/>} exact />
         <Route path="RegisterClient/" element={<RegisterClient/>} exact />
         <Route path="RegisterCollab/" element={<RegisterCollab/>} exact />
-        <Route path="Search/" element={<Search/>} exact />
-        <Route path="UpdateCollab/" element={<UpdateCollab/>} exact />
       </Routes>
     </BrowserRouter>
   );

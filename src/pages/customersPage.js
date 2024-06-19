@@ -13,9 +13,9 @@ const CustomersPage = () => {
     setCustomers(data);
   };
 
-  // useEffect(() => {
-  //   fetchCustomers();
-  // }, []);
+  useEffect(() => {
+    fetchCustomers();
+  }, []);
 
   const handleSave = () => {
     fetchCustomers();
@@ -32,8 +32,8 @@ const CustomersPage = () => {
 
   return (
     <div className="container">
-      <h2 className='Customers'>Customers</h2>
-      <CustomerForm CustomerToEdit={customerToEdit} onSave={handleSave} />
+      {/* <h2 className='Customers'>Customers</h2> */}
+      {/* <CustomerForm CustomerToEdit={customerToEdit} onSave={handleSave} /> */}
       <CustomerList customers={customers} onEdit={handleEdit} onDelete={handleDelete} />
     </div>
   );

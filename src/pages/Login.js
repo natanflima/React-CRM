@@ -1,21 +1,26 @@
-
 import "./Login.css";
 
 function Login() {
+  function handleLogin(e) {
+    e.preventDefault() //previne o comportamento padrão
   return(
-    <body>
-      <div class="login-container">
+    <div className="login-container">
+      <div className="login-box">
         <h2>Login</h2>
-          <form>
-              <label for="username">Usuário</label>
-              <input type="text" id="username" name="username" required></input>
-              <label for="password">Senha</label>
-              <input type="password" id="password" name="password" required></input>
-              <input type="submit" value="Entrar"></input>
-          </form>
+        <form>
+          <div className="input-group">
+            <label>Email</label>
+            <input type="email" required />
+          </div>
+          <div className="input-group">
+            <label>Senha</label>
+            <input type="password" required />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
       </div>
-    </body>
-  )
+    </div>
+  );
 }
-
+}
 export default Login;
